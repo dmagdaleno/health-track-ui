@@ -41,3 +41,13 @@ h1 {
 .center {
   text-align: center;
 }
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.link {
+  color: blue;
+  text-decoration: underline;
+}
