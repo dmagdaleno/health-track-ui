@@ -51,3 +51,7 @@ a {
   color: blue;
   text-decoration: underline;
 }
+
+.nav-item {
+  padding-left: 20px;
+}
