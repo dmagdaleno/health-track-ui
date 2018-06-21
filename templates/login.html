@@ -49,34 +49,26 @@
 
     <div class="container">
       <h1>Login</h1>
-      <div class="alert alert-success d-none" role="alert">
-        <span class="fas fa-check-circle" aria-hidden="true"></span>
-        <span class="sr-only">Error:</span>
-        Login realizado com sucesso.
-      </div>
-      <div class="alert alert-danger d-none" role="alert">
-        <span class="fas fa-exclamation-circle" aria-hidden="true"></span>
-        <span class="sr-only">Error:</span>
-        Entre com um email válido.
-      </div>
 
-      <form>
+      <form id="loginForm">
         <div class="form-group">
           <label for="email">Email:</label>
-          <input type="email" class="form-control" id="email">
+          <input type="email" class="form-control" id="email" name="email">
         </div>
         <div class="form-group">
-          <label for="pwd">Senha:</label>
-          <input type="password" class="form-control" id="pwd">
+          <label for="password">Senha:</label>
+          <input type="password" class="form-control" id="password" name="password">
         </div>
         <div class="checkbox">
           <label><input type="checkbox"> Lembrar</label>
         </div>
-        <button type="submit" class="btn btn-primary">Entrar</button>
+        <button type="submit" class="btn btn-primary" id="btnLogar">Entrar</button>
       </form>
     </div>
 
     <script src="../static/js/jquery-3.3.1.min.js"></script>
     <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/js/jquery.validate-1.17.0.min.js"></script>
+    <script src="../static/js/login-validate.js"></script>
   </body>
 </html>

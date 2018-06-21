@@ -45,10 +45,10 @@
 
     <div class="container">
       <h1>Cadastro de Atividade Física</h1>
-      <form>
+      <form id="atividadeForm">
         <div class="form-group">
-          <label for="inputTipo">Tipo</label>
-          <select id="inputTipo" class="form-control">
+          <label for="tipo">Tipo</label>
+          <select id="tipo" name="tipo" class="form-control">
             <option selected>Caminhada</option>
             <option>Corrida</option>
             <option>Pedalada</option>
@@ -56,22 +56,26 @@
           </select>
         </div>
         <div class="form-group">
-          <label for="inputCaloria">Calorias</label>
-          <input type="number" id="inputCaloria" class="form-control" placeholder="Calorias">
+          <label for="caloria">Calorias</label>
+          <input type="number" id="caloria" name="caloria" class="form-control" placeholder="Calorias">
         </div>
         <div class="form-group">
-          <label for="tareaDescricao">Descrição</label>
-          <textarea class="form-control" id="tareaDescricao" rows="3" placeholder="Descrição (opcional)"></textarea>
+          <label for="descricao">Descrição</label>
+          <textarea id="descricao" name="descricao" class="form-control" rows="3" placeholder="Descrição (opcional)">
+          </textarea>
         </div>
         <div class="form-group">
           <label for="data">Data</label>
-          <input type="datetime-local" id="data" name="data" max="3000-12-31" min="1000-01-01" class="form-control">
+          <input type="datetime-local" id="data" name="data" class="form-control">
         </div>
+        <button type="submit" class="btn btn-primary">Adicionar atividade física</button>
       </form>
-      <button type="button" class="btn btn-primary">Adicionar atividade física</button>
     </div>
 
     <script src="../../static/js/jquery-3.3.1.min.js"></script>
     <script src="../../static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../static/js/jquery.validate-1.17.0.min.js"></script>
+    <script src="../../static/js/format-date.js"></script>
+    <script src="../../static/js/cadastro-atividade-validate.js"></script>
   </body>
 </html>

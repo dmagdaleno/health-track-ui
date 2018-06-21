@@ -49,16 +49,10 @@
 
     <div class="container">
       <h1>Cadastro</h1>
-      <div class="alert alert-danger d-none" role="alert">
-        <span class="fas fa-exclamation-circle" aria-hidden="true"></span>
-        <span class="sr-only">Error:</span>
-        Entre com um email válido.
-      </div>
-
-      <form>
+      <form id="perfilForm">
         <div class="form-group">
           <label for="nome">Nome</label>
-          <input type="text" class="form-control" id="nome" placeholder="Nome completo">
+          <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome completo">
         </div>
         <div class="form-group">
           <label for="data">Data de nascimento</label>
@@ -66,27 +60,27 @@
         </div>
         <div class="form-group">
           <label for="altura">Altura</label>
-          <input type="number" class="form-control" id="altura" placeholder="Altura em metros">
+          <input type="number" class="form-control" id="altura" name="altura" placeholder="Altura em metros">
         </div>
         <div class="form-group">
-          <label for="select-genero">Gênero (para cálculo do IMC)</label>
-          <select id="select-genero" class="form-control">
-            <option value="0">Selecione</option>
+          <label for="genero">Gênero (para cálculo do IMC)</label>
+          <select id="genero" name="genero" class="form-control">
+            <option value="">Selecione</option>
             <option value="F">Feminino</option>
             <option value="M">Masculino</option>
           </select>
         </div>
         <div class="form-group">
           <label for="email">Email</label>
-          <input type="email" class="form-control" id="email" placeholder="Email">
+          <input type="email" class="form-control" id="email" name="email" placeholder="Email">
         </div>
         <div class="form-group">
           <label for="senha">Senha</label>
-          <input type="password" class="form-control" id="senha" placeholder="Senha">
+          <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha">
         </div>
         <div class="form-group">
-          <label for="confirma-senha">Confirmação da senha</label>
-          <input type="password" class="form-control" id="confirma-senha" placeholder="Confirme a senha">
+          <label for="confirmaSenha">Confirmação da senha</label>
+          <input type="password" class="form-control" id="confirmaSenha" name="confirmaSenha" placeholder="Confirme a senha">
         </div>
         <button type="submit" class="btn btn-primary">Cadastrar</button>
       </form>
@@ -94,5 +88,8 @@
 
     <script src="../../static/js/jquery-3.3.1.min.js"></script>
     <script src="../../static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../static/js/jquery.validate-1.17.0.min.js"></script>
+    <script src="../../static/js/format-date.js"></script>
+    <script src="../../static/js/cadastro-perfil-validate.js"></script>
   </body>
 </html>
