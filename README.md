@@ -1,3 +1,3 @@
 #HealthTrack
 
-Iniciar a navegação por templates/index.html
+Iniciar a navegaÃ§Ã£o por templates/index.html
