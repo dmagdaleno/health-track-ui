@@ -25,12 +25,14 @@
             <li><span class="atributo-chave">Altura:</span> <span class="atributo-valor">1,70 m</span></li>
             <li><span class="atributo-chave">IMC:</span> <span class="atributo-valor">24,2</span></li>
             <li>
-              <span class="atributo-chave">Pressão:</span> <span class="atributo-valor">
-                120/80 mmHg - 20/02/2018
-              </span>
+              <span class="atributo-chave">Pressão:</span> 
+              <span class="atributo-valor">120/80 mmHg - 20/02/2018</span>
             </li>
-            <br>
-            <li><a href="index.jsp"><span class="fas fa-sign-out-alt"></span> Sair</a></li>
+            <li style="margin-top: 20px">
+              <a href="${pageContext.servletContext.contextPath}">
+                <span class="fas fa-sign-out-alt"></span> Sair
+              </a>
+            </li>
           </ul>
         </div>
         <div class="col-sm-3"></div>
