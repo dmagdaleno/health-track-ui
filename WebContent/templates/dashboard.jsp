@@ -1,20 +1,12 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
 <!Doctype html>
 <html lang="pt">
   <head>
     <title>HealthTrack - Dashboard</title>
 
-    <meta charset="utf-8">
-    <meta name="description" content="healthtrack dashboard page">
-    <meta name="author" content="Diego">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
-
-    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../static/bootstrap/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="../static/css/base.css">
-
-    <link rel="shortcut icon" type="image/x-icon" href="../static/img/favincon.ico" />
-    <link rel="icon" type="image/x-icon" href="../static/img/favincon.ico" />
+    <%@ include file="header.jsp" %>
+    
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -120,7 +112,7 @@
       </div>
     </div>
 
-    <script src="../static/js/jquery-3.3.1.min.js"></script>
-    <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+    <%@ include file="footer.jsp" %>
+    
   </body>
 </html>
